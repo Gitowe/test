@@ -1,42 +1,91 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family:sans-serif;
+    margin:0;
+    padding:0;
+    font-family:'poppins',sans-serif;
+    box-sizing:border-box;
 }
 
-.hero{
+.header{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(galaxy_background.jpg);
-    background-position: center;
-    background-size: cover;
-    position: absolute;
+    background: linear-gradient(to right, #6280d1, #744a97);
+    position: absolute; 
 }
-.form-box{
-    width: 380px;
-    height: 480px;
+
+.upper-bar{
+    height: 80px;
     position: relative;
+    background: rgb(39, 29, 38);
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    padding:20px 8%;
+}
+
+nav .logo{
+    width: 200px;
+    margin-left: -50px;
+    cursor: pointer;
+}
+
+nav ul{
+    flex:1;
+    text-align:right;
+}
+
+nav ul li{
+    display:inline-block;
+    list-style:none;
+    margin:0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#ffff;
+}
+
+button{
+    background:#efefef;
+    height:30px;
+    width:60px;
+    border-radius: 20px;
+    border:0;
+    outline:0;
+    cursor: pointer;
+}
+
+button span{
+    display:block;
+    background:#999;
+    height:26px;
+    width: 26px;
+    border-radius:50%;
+}
+
+.messages{
+    height: 80px;
+    text-align: center;
     margin: 6% auto;
-    background: #fff;
+    position: relative;
     padding: 5px;
     overflow: hidden;
+    font-size: 35px;
+    color:#ffff;
 }
+
 .button-box{
-    width: 220px;
-    margin: 35px auto;
+    height: 400px;
     position: relative;
-    box-shadow: 0 0 20px 9px #0303301f;
+    padding: 5px;
+    overflow: hidden;
+    width: 340px;
+    margin: 35px auto;
     border-radius: 30px;
 }
-.toggle-btn{
-    padding: 10px 30px;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    outline: none;
-    position: relative;
-}
-#btn{
+
+/*#btn{
     top:0;
     left: 0;
     position: absolute;
@@ -44,48 +93,29 @@
     height: 100%;
     background: linear-gradient(to right, #6280d1, #744a97);
     border-radius: 30px;
-    transition: .5s;
-}
-.input-group{
-    top: 180px;
-    position: absolute;
-    width: 280px;
-    transition: .5s;
-}
-.input-field{
-    width: 100%;
-    padding: 10px 0;
-    margin: 5px 0;
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 1px solid #999;
-    outline: none;
-    background: transparent;
-}
-.submit-btn{
-    width: 85%;
-    padding: 10px 30px;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    background: linear-gradient(to right, #6280d1, #744a97);
-    border: 0;
-    outline: none;
+}*/
+
+.guest_btn{
+    height: 100px;
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    overflow: hidden;
+    width: 320px;
+    margin: 30px auto;
     border-radius: 30px;
+    font-size: 20px;
 }
-.check-box{
-    margin: 30px 10px 30px 0;
-}
-span{
-    color: #777;
-    font-size: 13px;
-    bottom: 68px;
-    position: absolute;
-}
-#login{
-    left:50px
-}
-#register{
-    left:450px
+
+.login_btn{
+    height: 100px;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+    width: 320px;
+    margin: 30px auto;
+    position: relative;
+    border-radius: 30px;
+    font-size: 20px;
+
 }

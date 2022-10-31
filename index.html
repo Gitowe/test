@@ -1,60 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Study Buddy</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="hero">
-        <div class="form-box">
+    <section class="header">
 
-            <div class="button-box">
-                <div id="btn">
-                </div>
-                <button type="button" class="toggle-btn" onclick="login()">Login</button>
-                <button type="button" class="toggle-btn" onclick="register()">Register</button>
-            </div>
+        <nav class="upper-bar">
+            <img src="TSBLogo.png" class="logo" align="right">
+            <!-- <ul>
+                <li><a href="login.html">Login/Register</a></li>
+                <li><a href="">Study Tools</a></li>
+            </ul>  add this later :D 
+            <button type="button"><span></span></button> -->
+        </nav>
 
-            <form id="login" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="text" class="input-field" placeholder="Password" required>
-                <input type="checkbox" class="check-box"><span>Remember Password</span>
-                <button type="submit" class="submit-btn">Login</button>
-            </form>
-            <form id="register" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="email" class="input-field" placeholder="Email" required>
-                <input type="text" class="input-field" placeholder="Password" required>
-                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
-                <button type="submit" class="submit-btn">Register</button>
-            </form>
-
+        <div class="messages">
+            <h1>The Study Buddy</h1>
         </div>
 
-        <script>
-            var x = document.getElementById("login");
-            var y = document.getElementById("register");
-            var z = document.getElementById("btn");
+       <div class="button-box">  
+            <a href="dashboard.html">
+                <button type="button" class="guest_btn" >Try Guest Mode!</button>
+            </a>
+            <a href="login.html">
+                <button type="button" class="guest_btn" >Login/Register</button>
+            </a>
+        </div>
+        
+        <!--<a href="dashboard.html">
+            <button type="button" class="guest_btn" >Try Guest Mode!</button>
+        </a>
+        <a href="login.html">
+            <button type="button" class="guest_btn" >Login/Register</button>
+        </a>-->
 
-            function register(){
-                x.style.left = "-400px";
-                y.style.left = "50px";
-                z.style.left = "110px";
-            }
-            function login(){
-                x.style.left = "50px";
-                y.style.left = "450px";
-                z.style.left = "0px";
-            }
-        </script>
+    </section>
 
-    </div>
     <script src="index.js"></script>
-</body>
 
+  <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="backend.js"></script>
+  -->
+
+</body>
 </html>
